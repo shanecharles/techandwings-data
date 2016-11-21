@@ -23,7 +23,7 @@ namespace TechAndWingsApi.Controllers
       {
         var meetupData = await stream.ReadToEndAsync();
         var response = Request.CreateResponse(HttpStatusCode.OK);
-        response.Content = new StringContent(meetupData, Encoding.UTF8, "application/json");
+        response.Content = new StringContent(meetupData.Replace("\r\n",""), Encoding.UTF8, "application/json");
         return response;
       }
     }
