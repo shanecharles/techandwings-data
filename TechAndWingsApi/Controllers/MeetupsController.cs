@@ -26,8 +26,6 @@ namespace TechAndWingsApi.Controllers
         var response = Request.CreateResponse(HttpStatusCode.OK);
         response.Content = new StringContent(meetupData, Encoding.UTF8, "application/json");
         return response;
-        //var data = JsonConvert.DeserializeObject(meetupData);
-        //return data;
       }
     }
   }
