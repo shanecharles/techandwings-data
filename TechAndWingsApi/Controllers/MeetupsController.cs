@@ -18,13 +18,16 @@ namespace TechAndWingsApi.Controllers
     /// Retrieves the current season's meetups for Tech and Wings Brandon.
     /// </summary>
     /// <returns>Json only</returns>
-    public async Task<object> Get()
+    public async Task<HttpResponseMessage> Get()
     {
       using (var stream = new StreamReader(File.OpenRead(HostingEnvironment.MapPath("~/app_data/meetups.json"))))
       {
         var meetupData = await stream.ReadToEndAsync();
-        var data = JsonConvert.DeserializeObject(meetupData);
-        return data;
+        var response = Request.CreateResponse(HttpStatusCode.OK);
+        response.Content = new StringContent(meetupData, Encoding.UTF8, "application/json");
+        return response;
+        //var data = JsonConvert.DeserializeObject(meetupData);
+        //return data;
       }
     }
   }
