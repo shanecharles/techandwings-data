@@ -8,7 +8,8 @@
     , {
       "date": "2016-12-14T02:00:00.000Z",
       "location": "Boston Pizza, 1140 Richmond Ave, Brandon, MB",
-      "topics":""
+      "topics": "Winnipeg Code Camp, Dependency Injection, Domain Driven Design, Command/Queries, Code reuse",
+      "people":  3
     }
     , {
       "date": "2017-01-11T02:00:00.000Z",
