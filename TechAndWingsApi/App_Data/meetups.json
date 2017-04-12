@@ -31,7 +31,9 @@
   {
     "date": "2017-04-12T01:00:00.000Z",
     "location": "Boston Pizza, 1140 Richmond Ave, Brandon, MB",
-    "topics": ""
+    "topics": "C# 6, Pattern matching, Clean Code (book), Prairie Dev Con",
+    "people": 3
+
   },
   {
     "date": "2017-05-10T01:00:00.000Z",
